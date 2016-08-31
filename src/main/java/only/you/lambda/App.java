@@ -1,9 +1,12 @@
 package only.you.lambda;
 
+import only.you.lambda.word.WordCounter;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello, lambda!" );
+        int count = WordCounter.getWordsCount();
+    	System.out.println( "Всего: " + count );
     }
 }
